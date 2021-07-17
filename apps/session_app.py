@@ -11,7 +11,7 @@ from scripts.data_loaders import loadData1
 
 def app():
     st.title("Session Data")
-    df=loadData1()
+    df=loadData1().copy()
     column=st.selectbox('Column',df.columns[1:])
     # group= st.selectbox('GroupBy',["None",list(df.columns[1:])])
 

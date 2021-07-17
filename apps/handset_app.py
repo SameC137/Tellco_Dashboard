@@ -12,7 +12,7 @@ from scripts.data_loaders import loadData1
 
 def app():
     st.title("Session Data")
-    df=loadData1()
+    df=loadData1().copy()
     
     num=st.slider("Select number of values", 10, 1000, 5,key=3)
     # group= st.selectbox('GroupBy',["None",list(df.columns[1:])])

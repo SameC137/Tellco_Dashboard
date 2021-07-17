@@ -5,7 +5,7 @@ import streamlit as st
 # from scripts.scripts import *
 from multiapp import MultiApp 
 
-from apps import experience_app, session_app, handset_app
+from apps import experience_app, session_app, handset_app,correlation_app,distribution_graphs
 
 
 
@@ -20,6 +20,10 @@ app.add_app("Satisfaction Data View", experience_app.app)
 app.add_app("Session Data View", session_app.app)
 
 app.add_app("Handet Data View", handset_app.app)
+
+app.add_app("Correlation Map", correlation_app.app)
+
+app.add_app("Distribution Graphs", distribution_graphs.app)
 
 # The main app
 app.run()

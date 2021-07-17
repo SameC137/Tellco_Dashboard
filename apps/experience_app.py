@@ -15,7 +15,7 @@ def app():
     
     st.title("User Satisfaction Data ")
     st.subheader("with Experience, Satisfaction and Engagement Scores")
-    df_scored=loadData2()
+    df_scored=loadData2().copy()
     selec= st.selectbox('Selection',["None","Top","Bottom"])   
     column=st.selectbox('Column',df_scored.columns[1:])
     num=st.slider("Select number of values", 10, 1000, 5,key=2)
