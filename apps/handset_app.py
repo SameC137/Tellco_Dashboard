@@ -9,8 +9,9 @@ import pandas as pd
 import numpy as np
 
 
-from scripts.scripts import *
-from scripts.data_loaders import loadData1
+
+from telldashboard.scripts.scripts import *
+from telldashboard.scripts.data_loaders import loadData1
 
 def app():
     st.title("Session Data")
