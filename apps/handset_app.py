@@ -52,12 +52,14 @@ def app():
         'Total UL (Bytes)' : 'sum',
     }
 
+    
+    st.subheader("Handset data.")
 
     dfAgg=df.groupby(['Handset Type']).agg(f)
     dfAgg=dfAgg.rename(columns={'MSISDN/Number':'Number of Users','Bearer Id':"Number of Sessions"})
     
-    selec= st.selectbox('Selection',["None","Top","Bottom"])   
-    column=st.selectbox('Column',dfAgg.columns)
+    selec= st.selectbox('Select the  every value, top or bottom',["None","Top","Bottom"])   
+    column=st.selectbox('Sort by Column',dfAgg.columns)
     num=st.slider("Select number of values", 10, 1000, 5,key=2)
     if selec=="Top":
         writeDf=getTop(dfAgg,column,num)

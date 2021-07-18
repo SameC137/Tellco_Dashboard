@@ -25,7 +25,7 @@ def app():
     df=form_combination_columns(df)
     # print(df["Total Data (Bytes)"].head(5))
     
-    column=st.selectbox('Column',["Social Media (Bytes)", "Youtube (Bytes)","Netflix (Bytes)", "Google (Bytes)", \
+    column=st.selectbox('Select column to see distribution',["Social Media (Bytes)", "Youtube (Bytes)","Netflix (Bytes)", "Google (Bytes)", \
          "Email (Bytes)", "Gaming (Bytes)", "Other (Bytes)" ,  "Total Data (Bytes)"])
 
 

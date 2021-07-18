@@ -14,10 +14,10 @@ from apps.data_loaders import loadData1
 def app():
     st.title("Session Data")
     df=loadData1().copy()
-    column=st.selectbox('Column',df.columns[1:])
+    column=st.selectbox('Sort by Column',df.columns[1:])
     # group= st.selectbox('GroupBy',["None",list(df.columns[1:])])
 
-    selec= st.selectbox('Selection',["None","Top","Most Frequent","Bottom"])
+    selec= st.selectbox('Select the  every value, top or bottom',["None","Top","Most Frequent","Bottom"])
     num=st.slider("Select number of values", 10, 1000, 5)
     if selec=="Top":
         writeDf=getTop(df,column,num)
