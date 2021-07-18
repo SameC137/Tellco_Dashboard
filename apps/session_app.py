@@ -2,6 +2,8 @@
 import sys, os
 sys.path.append(os.path.abspath(os.path.join('..')))
 
+sys.path.insert(0, '../scripts')
+
 import streamlit as st
 import pandas as pd
 import numpy as np
