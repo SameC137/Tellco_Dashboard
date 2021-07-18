@@ -11,8 +11,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-from telldashboard.scripts.scripts import *
-from telldashboard.scripts.data_loaders import loadData1
+from scripts import *
+from data_loaders import loadData1
 
 def app():
     st.title("Correlation ")
