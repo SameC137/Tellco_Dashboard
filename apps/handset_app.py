@@ -10,8 +10,8 @@ import numpy as np
 
 
 
-from telldashboard.scripts.scripts import *
-from telldashboard.scripts.data_loaders import loadData1
+from apps.scripts import *
+from apps.data_loaders import loadData1
 
 def app():
     st.title("Session Data")

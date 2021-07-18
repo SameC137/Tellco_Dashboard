@@ -8,8 +8,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-from scripts import *
-from data_loaders import loadData1
+from apps.scripts import *
+from apps.data_loaders import loadData1
 
 def app():
     st.title("Session Data")

@@ -13,8 +13,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-from scripts import *
-from data_loaders import loadData1
+from apps.scripts import *
+from apps.data_loaders import loadData1
 
 def app():
     st.title("Distribution Graphs ")

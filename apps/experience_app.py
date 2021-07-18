@@ -8,8 +8,8 @@ import numpy as np
 import pandas as pd
 
 
-from scripts import *
-from data_loaders import loadData2
+from apps.scripts import *
+from apps.data_loaders import loadData2
 
 def app():
     
