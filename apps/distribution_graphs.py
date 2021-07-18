@@ -12,8 +12,8 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-from scripts.scripts import *
-from scripts.data_loaders import loadData1, loadData2
+from .scripts.scripts import *
+from .scripts.data_loaders import loadData1, loadData2
 
 def app():
     st.title("Distribution Graphs ")

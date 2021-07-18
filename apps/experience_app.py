@@ -7,8 +7,8 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
-from scripts.scripts import *
-from scripts.data_loaders import loadData2
+from .scripts.scripts import *
+from .scripts.data_loaders import loadData2
 
 def app():
     
